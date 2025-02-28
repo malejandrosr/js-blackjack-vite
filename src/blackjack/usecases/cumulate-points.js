@@ -4,13 +4,14 @@ import { cardValue } from "./card-value";
  * This function returns the cumulated points of the player
  * @param {String} card The card to be evaluated
  * @param {Number} playerTurn The player turn
- * @param {Array<Number>} playersPoints The points of the players 
+ * @param {Array<Number>} playersPoints The points of the players
  * @param {Array<HTMLElement>} smallTags The small tags of the players
  * @throws {Error} If the card is not provided
  * @throws {Error} If the player turn is not provided
  * @throws {Error} If the players points are not provided
  * @throws {Error} If the small tags are not provided
- * @returns {Number} The points of the player 
+ * @returns {Number} The points of the player
+ * @author M. Alejandro Salgado Ramírez <alejandrosram@outlook.com>
  */
 export const cumulatePoints = (card, playerTurn, playersPoints, smallTags) => {
     if (!card) {

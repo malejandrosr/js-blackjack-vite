@@ -1,5 +1,5 @@
 /**
- * 
+ *
  * @param {String} card The selected card
  * @throws {Error} If the card is not provided
  * @returns {HTMLImageElement} The card element
@@ -16,4 +16,3 @@ export const createCard = (card) => {
 
     return imgCard;
 };
-  

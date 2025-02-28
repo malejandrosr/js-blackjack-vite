@@ -7,6 +7,7 @@ import { requestCard } from "./request-card";
  * @param {Array<Number>} playersPoints The points of the players
  * @throws {Error} If the players points are not provided
  * @returns {void}
+ * @author M. Alejandro Salgado Ramírez <alejandrosram@outlook.com>
  */
 const chooseWinner = (playersPoints) => {
     if (!playersPoints) {
@@ -40,6 +41,7 @@ const chooseWinner = (playersPoints) => {
  * @throws {Error} If the small tags are not provided
  * @throws {Error} If the cards div are not provided
  * @returns {void}
+ * @author M. Alejandro Salgado Ramírez <alejandrosram@outlook.com>
  */
 export const computerTurn = (minPoints, playersPoints, smallTags, cardsDiv, deck = []) => {
     if (!minPoints) {

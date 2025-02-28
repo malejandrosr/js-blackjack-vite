@@ -9,6 +9,6 @@ export const requestCard = (deck) => {
     if (!deck || deck.length === 0) {
         throw new Error("No cards on deck");
     }
-  
+
     return deck.pop();
 };
