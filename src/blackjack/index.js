@@ -38,7 +38,9 @@ btnRequestCard.addEventListener("click", () => {
 
     const playerPoints = cumulatePoints(card, 0, playersPoints, smallTags);
 
-    createCard(card, 0, cardsDiv);
+    const imgCard = createCard(card);
+
+    cardsDiv[0].append(imgCard);
 
     if (playerPoints > 21) {
         btnRequestCard.disabled = true;

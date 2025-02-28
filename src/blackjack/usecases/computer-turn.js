@@ -59,7 +59,9 @@ export const computerTurn = (minPoints, playersPoints, smallTags, cardsDiv, deck
 
         computerPoints = cumulatePoints(card, playersPoints.length - 1, playersPoints, smallTags);
 
-        createCard(card, playersPoints.length - 1, cardsDiv);
+        const imgCard = createCard(card);
+
+        cardsDiv[playersPoints.length - 1].append(imgCard);
     } while (computerPoints < minPoints && minPoints <= 21);
 
     chooseWinner(playersPoints);
