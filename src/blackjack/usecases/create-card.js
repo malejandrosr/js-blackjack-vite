@@ -11,7 +11,7 @@ export const createCard = (card) => {
     }
 
     const imgCard = document.createElement("img");
-    imgCard.src = `/assets/cards/${card}.png`;
+    imgCard.src = `${import.meta.env.BASE_URL}assets/cards/${card}.png`;
     imgCard.classList.add("blackjack-card");
 
     return imgCard;
